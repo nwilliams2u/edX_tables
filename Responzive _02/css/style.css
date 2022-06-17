@@ -1,0 +1,148 @@
+
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,400,400i,500,700,700i);
+
+* {
+  margin: 0;    
+  padding: 0;  
+}
+
+*, *:before, *:after {    
+  box-sizing: inherit;  
+}
+
+html {    
+  box-sizing: border-box;
+}
+
+body {    
+  line-height: 1.5; /*make the line height one and a half times more than the font size.*/
+  font-family: 'Fira Sans', sans-serif;
+  color: #333;
+}
+
+a[href]:not([class]) {    
+  color: #999;    
+  text-decoration: none;  
+  transition: all ease-in-out .3s;
+}
+
+p {
+  display: inline-block;
+  box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+
+body {
+  color: #2F2F2F;
+  background-color: #ebedf0;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 2rem 0rem 0rem 0rem;
+  max-width: 1100px;
+}
+
+.table-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style-type: none;
+  outline: 1px solid #ddd;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1px;
+  margin-left: 1px;
+    background: #FFF;
+
+}
+.table-cell:first-child {
+outline: transparent;
+  background: transparent;
+}
+@media only screen and (max-width: 768px) {
+  .table-cell:first-child {
+    display: none;
+  }
+}
+.table-cell:nth-child(3) {
+  outline: 1px solid #30305b;
+}
+.table-cell:nth-child(-n+3) {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.table-cell > h3 {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+.table-cell.cell-feature {
+  text-align: left;
+  font-size: 18px;
+    background: #FFF;
+
+}
+.table-cell.TopicA {
+  background-color: #1475d4;
+  color: #FFF;
+}
+.table-cell.TopicA a.btn {
+  color: #FFF;
+}
+.table-cell.TopicA a.btn:hover {
+  background-color: limegreen;
+  border-color: limegreen;
+  color: white;
+}
+.table-cell.TopicB {
+  background-color: #043461;
+  color: #FFF;
+}
+.table-cell.TopicB a.btn {
+  color: #FFF;
+}
+.table-cell.TopicB a.btn:hover {
+  background-color: limegreen;
+  border-color: limegreen;
+  color: white;
+}
+
+/* Table columns
+================================== */
+.table-cell {
+  width: calc(33.33% - 1px);
+}
+@media only screen and (max-width: 768px) {
+  .table-cell.cell-feature {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+svg.enterprise-check path {
+  fill: #30305b !important;
+}
+
+a.btn {
+  border: 2px solid;
+  padding: .6rem .9rem .6rem .9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+}
